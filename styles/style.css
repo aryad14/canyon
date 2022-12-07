@@ -1,0 +1,409 @@
+:root {
+    --bg-color: #e9e9e9;
+    --brand-font: 'Zodiak', sans-serif;
+    --btn-border-radius: 0;
+    --color-dark: #484848;
+    --bg-hire-section: #d5d5d5;
+    --btn-font-size: 17px;
+    --btn-hover-color: #484848e2;
+    --muted-text: #4f4e4e;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.bg-light {
+    background-color: var(--bg-color) !important;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.btn {
+    border-radius: var(--btn-border-radius) !important;
+    background-color: var(--color-dark);
+    font-size: var(--btn-font-size);
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-color) !important;
+}
+
+.navbar-brand {
+    font-family: var(--brand-font);
+    font-weight: 500;
+    color: var(--color-dark);
+    font-size: 28px;
+    /* letter-spacing: 1px; */
+}
+
+.nav-item {
+    font-size: 17px;
+}
+
+.nav-link {
+    transition: all .5s !important;
+    -webkit-transition: all .5s !important;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid;
+    transition: all .5s !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+footer div a i {
+    font-size: 1.1rem;
+}
+
+.copyright-text {
+    font-size: .80rem;
+    color: #484848;
+}
+
+
+/* HomePage */
+.intro-text {
+    height: 30rem;
+}
+
+.intro-text>div {
+    width: 65%;
+}
+
+.intro-text>div>h1 {
+    color: #2d2d2d;
+    line-height: 1.2em;
+    letter-spacing: .01em;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.intro-text>div>h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: var(--muted-text);
+    font-family: 'Roundo', sans-serif;
+    letter-spacing: 1px;
+}
+
+.hire-section {
+    margin-top: 5rem;
+    background-color: var(--bg-hire-section);
+    text-align: left;
+    height: 40rem;
+}
+
+.hire-section>.container-fluid {
+    width: 60% !important;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.hire-section>.container-fluid>div>h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: .5px;
+}
+
+.hire-section>.container-fluid>div>h2 {
+    color: var(--color-dark);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 3px;
+}
+
+/* About Page */
+.about-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-text-container {
+    /* border: 1px solid; */
+    /* height: 100%; */
+    width: 80%;
+
+}
+
+.about-text-container h3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 1px;
+}
+
+.about-text-container h5 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 1px;
+}
+
+
+/* Video Page */
+.video-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.page-title {
+    font-family: 'Roundo', sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+}
+
+.page-title h1 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 48px;
+}
+
+/* Collection Page */
+.collection-title h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .35s ease-in-out;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .35s ease-in-out;
+}
+
+.img-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: 450px;
+    background-position: center center !important;
+    background-size: cover !important;
+}
+
+.hovereffect h2 {
+    position: relative;
+    /* font-size: 48px; */
+    letter-spacing: 1px;
+    font-weight: 500;
+    background-color: transparent;
+    font-family: 'Roundo', sans-serif;
+    color: #FFF;
+    font-size: 28px;
+    /* padding: 15% 0 10px 0; */
+    text-align: center;
+    transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+}
+
+.hovereffect .overlay:hover h2 {
+    -webkit-transform: translateY(-45px);
+    -ms-transform: translateY(-45px);
+    transform: translateY(-45px);
+}
+
+.hovereffect .overlay:hover {
+    background: rgb(73, 73, 73);
+    background: linear-gradient(180deg, rgba(73, 73, 73, 0.49653364763874297) 0%, rgba(45, 45, 45, 0.7346288857339811) 47%, rgba(0, 0, 0, 0.8410714627647934) 100%);
+}
+
+.hovereffect .overlay::after {
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+    transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+}
+
+.hovereffect .overlay::before {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    content: '';
+    opacity: 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+
+}
+
+.hovereffect a,
+.hovereffect p {
+    color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+    transition: opacity 0.35s, transform 0.45s;
+    -webkit-transform: translateY(45px);
+    -ms-transform: translateY(45px);
+    transform: translateY(45px);
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a,
+.hovereffect:hover p {
+    opacity: 1;
+    /* filter: alpha(opacity=100); */
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+@media (max-width: 768px) {
+    .intro-text>div {
+        width: 90%;
+    }
+
+    .intro-text>div>h1 {
+        font-size: 38px;
+    }
+
+    .intro-text>div>h4 {
+        font-size: 18px;
+    }
+
+    .column {
+        flex: 50%;
+    }
+
+    .hire-section>.container-fluid {
+        width: 100% !important;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+
+    .hire-section>.container-fluid>div>h2 {
+        color: var(--color-dark);
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    .video-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hovereffect h2 {
+        position: relative;
+        /* font-size: 36px; */
+        letter-spacing: 1px;
+        font-weight: 500;
+        padding: 15% 0 10px 0;
+        text-align: center;
+    }
+
+    .collection-title h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .column {
+        flex: 100%;
+        padding: 0 22px;
+    }
+
+    .hire-section>.container-fluid>div>h4 {
+        color: var(--color-dark);
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .hire-section>.container-fluid>div>h2 {
+        color: var(--color-dark);
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 35px;
+    }
+
+    .video-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .page-title h1 {
+        font-size: 36px;
+    }
+
+    .hovereffect h2 {
+        position: relative;
+        /* font-size: 28px; */
+        letter-spacing: 1px;
+        font-weight: 500;
+        padding: 15% 0 10px 0;
+        text-align: center;
+    }
+
+    .collection-title h2 {
+        font-size: 32px;
+    }
+
+    .about-text-container {
+        width: auto;
+    }
+
+    .about-text-container h3 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .about-container {
+        padding-left: 2.1rem;
+        padding-right: 2.1rem;
+    }
+}

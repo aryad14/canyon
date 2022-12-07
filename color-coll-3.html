@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/gallery-style.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet"
+        href="https://api.fontshare.com/v2/css?f[]=red-hat-display@800,300,700,400,500,600&display=swap">
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=zodiak@700,800,400,300,100&display=swap">
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=roundo@700,300,400,600,200,500&display=swap">
+
+    <title>Udee Space Template</title>
+    <style>
+        .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*--- additional css --*/
+
+        /*---Change column counts for gallery layout---*/
+        #app {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 3;
+            -webkit-column-gap: 15px;
+            -moz-column-gap: 15px;
+            column-gap: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="bg-light sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light m-3">
+            <div class="container-fluid mx-2 mx-md-4">
+                <a class="navbar-brand" href="index.html">Atharva Patil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fs-6"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-0 ms-md-4 mb-2 mb-lg-0 my-2 my-md-0">
+                        <li class="nav-item mx-auto mx-md-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown mx-auto mx-md-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="gallery-1x1.html">Gallery (1 x 1)</a></li>
+                                <li><a class="dropdown-item" href="gallery-2x2.html">Gallery (2 x 2)</a></li>
+                                <li><a class="dropdown-item" href="gallery-3x3.html">Gallery (3 x 3)</a></li>
+                                <li><a class="dropdown-item" href="gallery-4x4.html">Gallery (4 x 4)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-auto mx-md-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Video
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="video-1x1.html">Video (1 x 1)</a></li>
+                                <li><a class="dropdown-item" href="video-2x2.html">Video (2 x 2)</a></li>
+                                <li><a class="dropdown-item" href="video-3x3.html">Video (3 x 3)</a></li>
+                                <li><a class="dropdown-item" href="video-4x4.html">Video (4 x 4)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-auto mx-md-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Collection
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="collection-1x1.html">Collection (1 x 1)</a></li>
+                              <li><a class="dropdown-item" href="collection-2x2.html">Collection (2 x 2)</a></li>
+                              <li><a class="dropdown-item" href="collection-3x3.html">Collection (3 x 3)</a></li>
+                              <li><a class="dropdown-item" href="collection-4x4.html">Collection (4 x 4)</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item mx-auto mx-md-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mx-auto mx-md-2">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center ms-auto d-none d-md-block">
+                    <i class="fa-brands fa-facebook-f fs-5 mx-2"></i>
+                    <i class="fa-brands fa-instagram fs-5 mx-2"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Collection Tabs -->
+    <div class="container-fluid px-md-5 px-0">
+        <div class="collection-title d-flex align-items-center my-5 mx-5">
+            <h2>Colours</h2>
+        </div>
+        <section class="container-fluid">
+            <section class="p-0">
+                <div class="row">
+                  <div class="row">
+                    <div class="pt-5 px-md-4 px-4 pb-3 min-vh-100">
+                      <div class="row pb-3">
+                        <div id="app">
+                          <img src="img/amy-shamblen--9a3K9q4Mdk-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/amy-shamblen-61rFb1qnu1k-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/amy-shamblen-lJt-3NUFng4-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/amy-shamblen-nAuwybz8xcw-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/amy-shamblen-X3ijISYzlM4-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/autri-taheri-k4CvkfS5CtA-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/brenna-huff-OzKgJ5BP5vU-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/elena-koycheva-bGeupv246bM-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/elena-koycheva-jPzDoLu0prA-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/elena-koycheva-VmcIMhuWCac-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/estudio-bloom-oo3kSFZ7uHk-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/filip-mroz-5Vnd6GXbNvA-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/heather-ford-Fq54FqucgCE-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/jeff-frenette-rnLsZUWRnLA-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/lidya-nada--iX-0JI8-0Y-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/maciej-gerszewski-f3cj6dyBOhc-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/mae-mu-8Vh6ulKc50o-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/mae-mu-xtRL02ZuZxE-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/magic-mind-OXWe0I6TMRY-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/magic-mind-zO5A-pINbBI-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/natallia-nagorniak-YJnX-S4Ib5I-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/no-revisions-TIKsNJ1U7KQ-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/sahand-babali--ftMr1bhSWg-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/sincerely-media-PWrywcskTyE-unsplash.jpg" class="workCls" alt="" title="" />
+                          <img src="img/tyler-nix-443x_HqPtgY-unsplash.jpg" class="workCls" alt="" title="" />
+                        </div>
+                      </div>
+              </section>
+          </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid px-5 py-4">
+        <div
+            class="d-flex justify-content-center align-items-center flex-column my-4 gap-3 flex-sm-row justify-content-sm-between">
+            <span class="text-muted d-flex align-items-center gap-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-share"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+            </span>
+            <span class="text-muted me-sm-auto copyright-text">Copyright Text Comes Here</span>
+            <span class="text-muted copyright-text">Made with <a href="#" class="text-decoration-none text-muted">Udee
+                    Space</a></span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript"
+        src="https://udee.space/storage/app/public/community/assets/js/img-previewer.min.js"></script>
+
+    <script>
+        const a = new ImgPreviewer('body', {
+            scrollbar: true
+        })
+    </script>
+</body>
+
+</html>
